@@ -1,8 +1,9 @@
 package main
 
 import "fmt"
+import "mypkg"
 
-// Text is ...
+// Text は動作確認用の定数です
 const Text = "Text"
 
 /*
@@ -14,6 +15,13 @@ func main() {
 	typeStudy()
 
 	mapAndSwitchStudy()
+
+	person PersonModel*
+	person.SetPerson("Tomizawa", 10338)
+	toStringable ToStringable* = person
+	fmt.Println("--------------------")
+	fmt.Println(toStringable.ToString())
+	fmt.Println("--------------------")
 }
 
 func declareVarStudy() {
